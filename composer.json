@@ -1,0 +1,20 @@
+{
+    "name": "u0_a737/thecodedia",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aung Myat Moe",
+            "email": "aungmyatmoe.edu@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload":{
+      "psr-4":{
+        "app\\":"./"
+      },
+      "files":[
+        "helper.php"
+        ]
+    },
+    "require": {}
+}
