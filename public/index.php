@@ -13,7 +13,7 @@ $app->router->get('/contact','contact');
 
 // LoginController
 $app->router->get('/login',[AuthController::class,'login']);
-$app->router->post('/login',[AuthController::class,'store']);
+$app->router->post('/login',[AuthController::class,'login']);
 
 // Start Routimg
 $app->run();
