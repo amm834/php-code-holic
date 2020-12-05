@@ -1,14 +1,21 @@
 <?php
 require_once __DIR__.'/../vendor/autoload.php';
 use app\core\Application;
-use app\controllers\SiteController;
+use app\controllers\AuthController;
 
 $app = new Application();
+
+// Site Controller
 $app->router->get('/','home');
 
-$app->router->get('/contact',[SiteController::class,'contact']);
-$app->router->post('/contact','contact');
+// Contact View
+$app->router->get('/contact','contact');
 
+// LoginController
+$app->router->get('/login',[AuthController::class,'login']);
+$app->router->post('/login',[AuthController::class,'store']);
+
+// Start Routimg
 $app->run();
 
 ?>
